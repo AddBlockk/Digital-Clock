@@ -4,6 +4,7 @@ function calculateTime() {
   let dayNumber = date.getDay();
   let hour = date.getHours();
   let minute = date.getMinutes();
+  let second = date.getSeconds();
   let ampm = hour >= 12 ? "PM" : "AM";
   const dayNames = ["SUM", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
@@ -15,6 +16,7 @@ function calculateTime() {
   document.getElementById("hour").innerHTML = hour;
   document.getElementById("minute").innerHTML = minute;
   document.getElementById("ampm").innerHTML = ampm;
+  document.getElementById("second").innerHTML = second;
 
   setTimeout(calculateTime, 200);
 }
