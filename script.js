@@ -11,6 +11,7 @@ function calculateTime() {
   hour = hour % 12;
   hour = hour < 10 ? "0" + hour : hour;
   minute = minute < 10 ? "0" + minute : minute;
+  second = second < 10 ? "0" + second : second;
 
   document.getElementById("day").innerHTML = dayNames[dayNumber];
   document.getElementById("hour").innerHTML = hour;
@@ -18,5 +19,5 @@ function calculateTime() {
   document.getElementById("ampm").innerHTML = ampm;
   document.getElementById("second").innerHTML = second;
 
-  setTimeout(calculateTime, 200);
+  setTimeout(calculateTime, 2);
 }
